@@ -1,5 +1,11 @@
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
+MySQL数据库原则：
+1，字段名和表名单词间用下划线分割。
+2，主键为int类型。
+3，多对多的关系表不需要主键。
+4，划分数据表的逻辑分区，可用来做划分微服务的依据。
+5，时间类型为TIMESTAMP
 
 用户服务
 	user
